@@ -1,0 +1,23 @@
+[
+  "age",
+  "bmi",
+  "alcohol_units",
+  "alp",
+  "ggt",
+  "alt",
+  "ast",
+  "bilirubin",
+  "ca19_9",
+  "albumin",
+  "sex",
+  "se_asian",
+  "smoker",
+  "psc",
+  "liver_fluke",
+  "hbv",
+  "hcv",
+  "cirrhosis",
+  "gallstones",
+  "t2dm",
+  "fam_bileduct"
+]
