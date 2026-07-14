@@ -135,16 +135,16 @@ Produced by `python train.py`. Not clinical results — see the note above.
 | Decision Tree | 74.2% | 41.7% | 52.1% | 46.3% | 67.9% | 66.5% ± 6.9% |
 | Random Forest | 83.1% | 75.0% | 31.3% | 44.1% | 75.5% | 80.4% ± 1.2% |
 | XGBoost | 79.1% | 51.4% | 37.5% | 43.4% | 71.5% | 77.0% ± 1.9% |
-| LightGBM | *(see note)* | | | | | |
+| LightGBM | 80.4% | 57.1% | 33.3% | 42.1% | 70.4% | 79.1% ± 3.4% |
 
 **Logistic Regression is selected** as primary — not for accuracy (Random Forest is
 higher) but for the best **recall** and **F1**, which matter most in screening where a
 missed case is the costly error, plus the strongest interpretability. Numbers vary
 slightly with your environment and any real data you supply.
 
-> **Note on LightGBM:** if the LightGBM row is missing, its import failed (commonly a stale
-> `dask` conflicting with a newer `pandas`). Run `pip install --upgrade dask` or
-> `pip uninstall dask -y`, then re-run. `models.py` prints the exact reason rather than
+> **Troubleshooting LightGBM:** if the LightGBM row is ever missing, its import failed
+> (commonly a stale `dask` conflicting with a newer `pandas`). Run `pip install --upgrade dask`
+> or `pip uninstall dask -y`, then re-run. `models.py` prints the exact reason rather than
 > dropping the model silently.
 
 ---
